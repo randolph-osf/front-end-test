@@ -78,11 +78,15 @@ function renderImage(thumburl, descriptionurl, name) {
 // it initiates the first search for the page
 
 document.getElementById("search-form").onsubmit = function() {
-	document.getElementById("search-results").innerHTML = "";
-	searchImages("en.wikipedia.org", this["search-field"].value, {
-		ssl: true,
-		limit: 10,
-		callback: "cbSearchImages"
-	});
+	if(this["search-field"].value.replace(/^\s+|\s+$/g, '') == "")
+		alert("Please enter something to search");
+	else {
+		document.getElementById("search-results").innerHTML = "";
+		searchImages("en.wikipedia.org", this["search-field"].value, {
+			ssl: true,
+			limit: 10,
+			callback: "cbSearchImages"
+		});
+	}
 	return false;
 }
