@@ -78,6 +78,7 @@ function renderImage(thumburl, descriptionurl, name) {
 // it initiates the first search for the page
 
 document.getElementById("search-form").onsubmit = function() {
+	document.getElementById("search-results").innerHTML = "";
 	searchImages("en.wikipedia.org", this["search-field"].value, {
 		ssl: true,
 		limit: 10,
