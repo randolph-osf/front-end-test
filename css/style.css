@@ -1,0 +1,33 @@
+body, h1 { padding: 0; margin: 0; }
+
+/* header */
+
+header h1 {
+	background-color: blue;
+	color: #FFFFFF;
+	padding: 10px;
+	text-align: center;
+}
+
+/* search bar */
+
+#search-form {
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+/* results */
+
+#search-results-table {
+	width: 80%;
+	margin: auto;
+	text-align: left;
+}
+#search-results-table #image-thumbnail {
+	width: 70px;
+}
+#search-results-table img {
+	width: 50px;
+	height: 50px;
+}
