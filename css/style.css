@@ -3,7 +3,7 @@ body, h1 { padding: 0; margin: 0; }
 /* header */
 
 header h1 {
-	background-color: black;
+	background-color: blue;
 	color: #FFFFFF;
 	padding: 10px;
 	text-align: center;
